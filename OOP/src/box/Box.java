@@ -100,5 +100,11 @@ public class Box {
 	public void showInfo() {
 		System.out.println("Ширина: " + width + " Высота: " + height + " Длина: " + length);
 	}
+	 
+	@Override
+	public String toString() {
+		String result = String.format("Ширина: %s", width);
+		return result;
+	}
 	
 }

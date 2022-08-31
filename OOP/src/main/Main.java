@@ -1,6 +1,7 @@
 package main;
 import box.Box;
 import box.BoxWeight;
+import test.Empty;
 import test.Man;
 import test.MyMath;
 
@@ -116,6 +117,20 @@ public class Main {
 		inheritanceBoxWeight.showInfo();
 		BoxWeight inheritanceBoxWeight2 = new BoxWeight(100, 100, 100, 50.6);
 		inheritanceBoxWeight2.showInfo();
+	
+		Empty empty = new Empty();
+		empty.toString();
+		Box boxEmpty = new Box();
+		System.out.println(empty.toString());
+		System.out.println(boxEmpty);
+		
+		double random = Math.random();
+		random *= 6;
+		int randomInt = (int) random;
+		
+		int resultInt = (int) (Math.random() * 6 + 1);
+		System.out.println(resultInt);
+	
 	}
 	
 }
